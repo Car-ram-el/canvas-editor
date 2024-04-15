@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
-import {ChromePicker} from 'react-color';
 
 import template_data from './templateData.json';
 import Canvas from './Canvas';

@@ -1,6 +1,5 @@
 import React,{useState,useEffect,useCallback,useRef} from 'react'
 import {ChromePicker} from 'react-color';
-import {HexColorPicker} from 'react-colorful';
 
 const Color_picker = ({bg_color,setBg_color}) => {
   

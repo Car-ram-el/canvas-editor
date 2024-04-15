@@ -9,8 +9,8 @@ import Color_picker from './Color_picker';
 const Editor = () => {
   const canvas_ref=useRef();
   const [bg_color, setBg_color] = useState(() => localStorage.getItem('bg_color') || '#0369a1');
-  const [caption_text, setCaption_text] = useState(() => localStorage.getItem('caption_text') || template_data.caption_text);
-  const [cta_text, setCta_text] = useState(() => localStorage.getItem('cta_text') || template_data.cta_text);
+  const [caption_text, setCaption_text] = useState(() => localStorage.getItem('caption_text') || template_data.caption.text);
+  const [cta_text, setCta_text] = useState(() => localStorage.getItem('cta_text') || template_data.cta.text);
   const [masking_img, setMasking_img] = useState(()=>localStorage.getItem('masking_img')||null);
   const [canvas_editor, setCanvas_editor] = useState(null);
 

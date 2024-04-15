@@ -1,0 +1,24 @@
+{
+  "caption":{
+    "text":"1 & 2 BHK Luxury Apartments at just Rs.34.97 Lakhs",
+    "position":{"x":50,"y":50},
+    "max_characters_per_line":31,
+    "font_size":44,
+    "alignment":"left",
+    "text_color":"black"
+  },
+  "cta":{
+    "text":"Shop Now",
+    "position":{"x":100,"y":280},
+    "text_color":"black",
+    "background_color":"yellow"
+  },
+  "image_mask":{
+    "x":56,"y":442,"width":970,"height":600
+  },
+  "urls":{
+    "mask":"https://pbs.twimg.com/profile_images/1189603938137280512/Xy_sEdeN_400x400.jpg",
+    "stroke":"https://freefrontend.com/assets/img/css-text-stroke-examples/thumb.png?random=12364",
+    "design_pattern":"https://i.stack.imgur.com/bvC5g.jpg"
+  }
+}

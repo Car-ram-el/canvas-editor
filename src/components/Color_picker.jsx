@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useCallback,useRef} from 'react'
+import React,{useState,useEffect,useRef} from 'react'
 import {ChromePicker} from 'react-color';
 
 const Color_picker = ({bg_color,setBg_color}) => {

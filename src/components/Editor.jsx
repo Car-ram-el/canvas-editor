@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import template_data from './templateData.json';
 import Canvas from './Canvas';
 import '../index.css';
-import Color_picker from './Color_picker';
+import ColorPicker from './ColorPicker';
 
 const Editor = () => {
   const canvas_ref=useRef();
@@ -27,14 +27,14 @@ const Editor = () => {
       canvas_editor.update_caption(caption_text);
       localStorage.setItem('caption_text', caption_text);
     }
-  },[caption_text])
+  },[caption_text,canvas_editor])
   
   useEffect(()=>{
     if(canvas_editor){ 
       canvas_editor.update_cta(cta_text)
       localStorage.setItem('cta_text', cta_text);
     }
-  },[cta_text])
+  },[cta_text,canvas_editor])
 
   useEffect(()=>{
     if(canvas_editor){ 
@@ -82,7 +82,7 @@ const Editor = () => {
         placeholder='Enter the Call to Action Text'/>
         </div>  
 
-       <Color_picker bg_color={bg_color} setBg_color={setBg_color}/>
+       <ColorPicker bg_color={bg_color} setBg_color={setBg_color}/>
       </div>
   </div>
   )

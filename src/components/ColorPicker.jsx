@@ -1,7 +1,7 @@
 import React,{useState,useEffect,useRef} from 'react'
 import {ChromePicker} from 'react-color';
 
-const Color_picker = ({bg_color,setBg_color}) => {
+const ColorPicker = ({bg_color,setBg_color}) => {
   
   const color_picker_ref=useRef();
   const [color_picker, setColor_picker] = useState(false);
@@ -57,4 +57,4 @@ const Color_picker = ({bg_color,setBg_color}) => {
   )
 }
 
-export default Color_picker
+export default ColorPicker

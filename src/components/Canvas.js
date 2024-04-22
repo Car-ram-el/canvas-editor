@@ -9,12 +9,17 @@ export default class Canvas {
     this.image_mask = this.template_data.image_mask;
 
     this.image = new Image();
-    this.image.onload = () => this.draw_canvas();
-    this.image.src = this.template_data.urls.mask;
+    this.image.onerror=()=>console.error("Error loading mask image");
 
     this.pattern=new Image();
+    this.pattern.onerror=()=>console.error("Error loading pattern image");
+
+    this.image.onload=()=>this.draw_canvas();    
     this.pattern.onload=()=>this.draw_canvas();
-    this.pattern.src=this.template_data.urls.design_pattern;
+  }
+
+  check_draw(){
+    if(this.image.complete && this.pattern.complete) this.draw_canvas();
   }
 
   draw_canvas() {
